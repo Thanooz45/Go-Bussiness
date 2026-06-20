@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import Navbar from '../components/Navbar';
 import { formatDate, formatMoney } from '../utils/formatters';
@@ -341,8 +341,14 @@ function DashboardPage() {
 
       <footer className="dashboard-footer">
         <div className="footer-inner">
-          <span className="footer-brand">Go Business</span>
-          <span className="footer-copy">© {new Date().getFullYear()} Go Business</span>
+          <Link to="/" className="footer-brand">Go Business</Link>
+          <nav className="footer-links" aria-label="Footer">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#terms">Terms</a>
+          </nav>
+          <span className="footer-copy">© {new Date().getFullYear()} Go Business Inc.</span>
         </div>
       </footer>
     </div>

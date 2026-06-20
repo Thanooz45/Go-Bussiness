@@ -17,10 +17,10 @@ function Navbar() {
         <Link to="/" className="navbar-brand" aria-label="Go to dashboard home">
           Go Business
         </Link>
-        <nav aria-label="Primary" className="navbar-nav">
-          <Link to="/" className="nav-link">Home</Link>
-        </nav>
         <div className="navbar-actions">
+          <Link to="/" className="btn-try">
+            Try for free
+          </Link>
           <button className="btn-logout" onClick={handleLogout}>
             Log out
           </button>

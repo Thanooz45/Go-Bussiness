@@ -508,6 +508,25 @@
   font-size: 15px;
   font-weight: 700;
   color: #6366f1;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: #64748b;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-links a:hover {
+  color: #4f46e5;
 }
 
 .footer-copy {
@@ -552,5 +571,18 @@
 
   .footer-inner {
     padding: 0 16px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-copy {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px 20px;
   }
 }
